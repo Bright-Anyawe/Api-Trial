@@ -4,6 +4,10 @@ body {
 
 }
 
+:root {
+    --dominate-color: rgb(253, 230, 128);
+}
+
 #container {
     text-align: center;
     margin-top: 50px;
@@ -29,7 +33,7 @@ input[type=text] {
 figure {
     /* height: 300px;
     width: 400px; */
-    border: 15px solid rgb(253, 230, 128);
+    border: 15px solid var(--dominate-color);
     border-radius: 10px
 }
 
@@ -38,7 +42,12 @@ figure {
     border: 0;
     border-radius: 7px;
     padding: 7px;
-    background-color: rgb(253, 230, 128);
+    background-color: var(--dominate-color);
+}
+
+.submit:hover {
+    background-color: rgb(247, 147, 147);
+    color: white
 }
 
 figure img {
@@ -57,4 +66,10 @@ figure img {
     background: lightcoral;
     color: white;
     font-weight: 600;
+}
+
+#btn:hover {
+    background-color: var(--dominate-color);
+    color: black;
+
 }
